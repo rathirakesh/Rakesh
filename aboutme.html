@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>About me</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Nifty little description">
+        <link rel="canonical" href="/"> 
+        <link rel="stylesheet" href="css/front.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <style>
+            body {margin:0;font-family:Arial}
+            .text_blog ol {
+    list-style: initial;
+}
+ol {
+  list-style:none;
+}
+            
+            .topnav {
+              overflow: hidden;
+              background-color: #333;
+            }
+            
+            .topnav a {
+              float: left;
+              display: block;
+              color: #f2f2f2;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+              font-size: 17px;
+            }
+            
+            
+            
+            .topnav .icon {
+              display: none;
+            }
+         
+           
+            .dropdown-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+            
+            .topnav a:hover, .dropdown:hover .dropbtn {
+              background-color: #555;
+              color: white;
+            }
+            
+            .dropdown-content a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+            
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            
+            @media screen and (max-width: 600px) {
+              .topnav a:not(:first-child), .dropdown .dropbtn {
+                display: none;
+              }
+              .topnav a.icon {
+                float: right;
+                display: block;
+              }
+            }
+            
+            @media screen and (max-width: 400px) {
+              .topnav.responsive {position: relative;}
+              .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+              }
+              .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+              }
+              .topnav.responsive .dropdown {float: none;}
+              .topnav.responsive .dropdown-content {position: relative;}
+              .topnav.responsive .dropdown .dropbtn {
+                display: block;
+                width: 100%;
+                text-align: left;
+              }
+            }
+            </style>
+    </head>
+    <body>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" >Home</a>
+            <a href="aboutme.html" class="active">About me</a>
+            <a href="contact.html">Contact</a>
+            <a href="resume.pdf">Resume</a>
+            <a href="https://medium.com/@rathirakesh7">Blog</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+          </div>
+          
+         
+          
+          <script>
+          function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                  x.className += " responsive";
+              } else {
+                  x.className = "topnav";
+              }
+          }
+          </script>
+           
+           <script>
+            function myFunction1() {
+                var x = document.getElementById("myTopnav1");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+            </script>
+                  <script>
+                    $(document).ready(function(){
+                      $('div a').click(function(){
+                        $('a').removeClass("active");
+                        $(this).addClass("active");
+                    });
+                    });
+                     </script>
+        <div class="content">
+            
+            <img src="imgs/background.jpg" id="fullscreen">
+            
+
+            
+            <p> <h1> <img src="imgs/mine.png" id="avatar" align="middle">Rakesh Rathi</h1> </p>
+                 
+            
+                <div class="topnav" id="myTopnav1">
+                    <a href="#" class="c1" class="active">Intro</a>
+                    
+                    <a href="#" class="c2">Technologies</a>
+                    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction1()">&#9776;</a>
+                  </div>
+                  
+            
+               
+                
+
+                 <script>
+                       $( ".c1" ).click(function() {
+                         $( ".c3" ).show( "fast" );
+                         $( ".c4" ).hide( 0);
+                       });
+                       </script>
+                       <script>
+                               $( ".c2" ).click(function() {
+                                 $( ".c4" ).show( "fast" );
+                                 $( ".c3" ).hide(0);
+                               });
+                               </script>
+                              
+
+       <h3 style="display: none" class="text_blog c4">
+            <ol>
+                    <li>React-Native</li>
+                    <li>Native-Base</li>
+                    <li>Java</li>
+                    <li>Node.js</li>
+                    <li>Git</li>
+                    <li>GitBash</li>
+                    <li>MySQL</li>
+                  </ol>   
+       </h3>
+       <h3 class="text_blog c3">
+        <ol>
+          <li>I hail from the beautiful city of Jodhpur, also known as the Sun City.</li>
+          <li>I am currently pursuing B.Tech. in Computer Science and Engineering at Bharath Institute of Higher Education and Research, Chennai.</li>
+          <li>An avid Chess player from the start, I have diverse interest ranging from coding to playing sports.</li>
+        </ol>
+    </h3>
+      
+       
+       
+   </div>
+             
+                
+        </div>
+
+    </body>
+</html>
+
